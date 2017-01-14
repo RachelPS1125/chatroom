@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chatroom</title>
+    <style type="text/css">
+        ._hide{
+            display:none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='username js-username'>
+        Username:<input class='js-username-input' type="text">
+        <button class='js-join'>Join</button>
+    </div>
+
+    <div class='chat-area _hide js-chat-area'>
+        <input class="js-chat-input" type="text">
+        <div class="js-messages"></div>
+    </div>
+    
+    <div class="users js-users _hide">
+    </div>
+    <script src="//code.jquery.com/jquery-2.1.0.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script> 
+</body>
+
+</html>
+
+
